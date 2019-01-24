@@ -8,7 +8,7 @@ const readDir = dir => (
     : dir
 );
 
-const search = `${__dirname}/../../`;
+const search = `${__dirname}/../../../`;
 const paths = readDir(search);
 
 const toFind = [
@@ -49,6 +49,9 @@ const toFind = [
 toFind.forEach(({ file, replacements = [] }) => {
   const path = paths.find(i => i.includes(file));
   if (fs.existsSync(path)) {
+
+    console.log(`REPLACING: ${path}`);
+
     const contents = fs.readFileSync(path).toString();
     const newContents = replacements.reduce((o, { find, replace }) => {
       return o.replace(find, replace)
