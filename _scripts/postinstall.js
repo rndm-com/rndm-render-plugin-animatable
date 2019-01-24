@@ -1,3 +1,10 @@
+/*
+  This script addresses issues within the react-native-animatable package where Erros are thrown instead of being handled gracefully.
+
+  Issue found in version: 1.3.1
+
+ */
+
 const fs = require('fs');
 const path = require('path');
 
@@ -36,11 +43,11 @@ const toFind = [
     replacements: [
       {
         find: 'throw new Error(\'Animation definitions must have at least two values.\');',
-        replace: 'return {};,',
+        replace: 'return {};',
       },
       {
         find: 'throw new Error(\'Missing animation keyframe, this should not happen\');',
-        replace: 'continue;,',
+        replace: 'continue;',
       },
     ],
   },
