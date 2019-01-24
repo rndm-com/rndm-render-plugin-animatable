@@ -1,8 +1,8 @@
-# RNDM Render Plugin: Validator
+# RNDM Render Plugin: Animatable
 
 ## About
 
-This plugin provides the validation functionality for the [RNDM Render package](https://github.com/rndm-com/rndm-render).
+This plugin provides access to animatable components for the [RNDM Render package](https://github.com/rndm-com/rndm-render).
 
 ## Installation
 
@@ -11,7 +11,7 @@ If you have not already done so, then please ensure you have installed the [RNDM
 ### From NPM
 
 ```sh
-npm install --save @rndm/render-plugin-validator
+npm install --save @rndm/render-plugin-animatable
 ```
 
 ### Post Installation
@@ -20,13 +20,68 @@ In order to allow this plugin to work, it must first be included in your project
 
 ```javascript
 import '@rndm/render-plugin-core';
-import '@rndm/render-plugin-validator';
+import '@rndm/render-plugin-animatable';
 ```
 
 ## Usage
 
-The Validator Plugin transforms the URL Parser class into serialisable functions.
+The Animatable Plugin transforms the Components from the awesome [react-native-animatable](https://github.com/oblador/react-native-animatable) package into serialisable RNDM JSON responses.
 
-### Parse
+Full documentation around the usage of these can be found on the react-native-animatable GitHub page.
 
+### Components
+
+The three components supported by this plugin are:
+
+* View
+
+```json
+{
+  "type": "animatable.View",
+  "props": {
+    "animation": "bounce",
+    "iterationCount": 10,
+    "style": {
+      "width": 50,
+      "height": 50,
+      "backgroundColor": "red"
+    }
+  }
+}
+```
+
+* Image
+
+```json
+{
+  "type": "animatable.Image",
+  "props": {
+    "animation": "pulse",
+    "iterationCount": "infinite",
+    "source": {
+      "uri": "https://firebasestorage.googleapis.com/v0/b/rndm-com.appspot.com/o/rndm_200.png?alt=media&token=ca705331-6963-4287-9687-bc526feb0226"
+    },
+    "style": {
+      "width": 200,
+      "height": 200
+    }
+  }
+}
+
+```
+
+* Text
+
+```json
+{
+  "type": "animatable.Text",
+  "props": {
+    "animation": "fadeInUpBig",
+    "style": {
+      "color": "cyan"
+    }
+  }
+}
+
+```
 
