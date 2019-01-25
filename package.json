@@ -5,7 +5,7 @@
   "author": "RNDM",
   "license": "Apache-2.0",
   "description": "RNDM Render Plugin: Animatable. Animation Components and functionality for RNDM Render",
-  "homepage": "https://github.com/rndm-com/rndm-render-plugin-react-native-animatable#readme",
+  "homepage": "https://github.com/rndm-com/rndm-render-plugin-animatable#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/rndm-com/rndm-render-plugin-animatable.git"
