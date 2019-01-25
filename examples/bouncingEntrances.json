@@ -1,0 +1,99 @@
+{
+  "type": "react-native.SectionList",
+  "props": {
+    "windows": 2,
+    "style": {
+      "backgroundColor": "#ffffc6",
+      "padding": 10,
+      "flex": 1
+    },
+    "sections": [
+      {
+        "props.children.props.children": "Bouncing Entrances",
+        "data": [
+          {
+            "props.children.props.children": "bounceIn",
+            "props.animation": "bounceIn",
+            "props.style.backgroundColor": "#a367bf"
+          },
+          {
+            "props.children.props.children": "bounceInDown",
+            "props.animation": "bounceInDown",
+            "props.style.backgroundColor": "#eddeff"
+          },
+          {
+            "props.children.props.children": "bounceInUp",
+            "props.animation": "bounceInUp",
+            "props.style.backgroundColor": "#a367bf"
+          },
+          {
+            "props.children.props.children": "bounceInLeft",
+            "props.animation": "bounceInLeft",
+            "props.style.backgroundColor": "#eddeff"
+          },
+          {
+            "props.children.props.children": "bounceInRight",
+            "props.animation": "bounceInRight",
+            "props.style.backgroundColor": "#a367bf"
+          }
+        ]
+      }
+    ],
+    "renderSectionHeader": {
+      "type": "RNDM.renderItem",
+      "isFunc": true,
+      "args": [
+        {
+          "type": "react-native.View",
+          "props": {
+            "style": {
+              "margin": 5,
+              "padding": 5,
+              "height": 20,
+              "justifyContent": "center",
+              "backgroundColor": "#399694"
+            },
+            "children": {
+              "type": "react-native.Text",
+              "props": {
+                "style": {
+                  "color": "#ffffff"
+                }
+              }
+            }
+          }
+        },
+        "section"
+      ],
+      "execute": [
+        true
+      ]
+    },
+    "renderItem": {
+      "type": "RNDM.renderItem",
+      "isFunc": true,
+      "args": [
+        {
+          "type": "animatable.View",
+          "props": {
+            "iterationCount": "infinite",
+            "iterationDelay": 1000,
+            "style": {
+              "margin": 5,
+              "padding": 5,
+              "minHeight": 50,
+              "justifyContent": "center",
+              "backgroundColor": "#eddeff"
+            },
+            "children": {
+              "type": "react-native.Text"
+            }
+          }
+        }
+      ],
+      "execute": [
+        true
+      ]
+    }
+  }
+}
