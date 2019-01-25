@@ -85,3 +85,43 @@ The three components supported by this plugin are:
 
 ```
 
+### Middleware
+
+Although there is a host of predefined animations available, you are still able to create your own animation. This can be done by making use of the 'initializeRegistry' middleware.
+
+**Example**
+
+```json
+{
+  "type": "animatable.View",
+  "props": {
+    "animation": "myanim",
+    "iterationCount": "infinite",
+    "middleware": [{
+      "middleware": "animatable.initializeRegistryWithDefinitions",
+      "args": [{
+        "myanim": {
+          "0": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "1": {
+            "opacity": 0,
+            "scale": 0
+          },
+          "0.5": {
+            "opacity": 1,
+            "scale": 0.3
+          }
+        }
+      }]
+    }],
+    "style": {
+      "height": 50,
+      "width": 50,
+      "backgroundColor": "green"
+    }
+  }
+}
+
+```

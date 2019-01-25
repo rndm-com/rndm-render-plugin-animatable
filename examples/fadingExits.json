@@ -1,0 +1,113 @@
+{
+  "type": "react-native.SectionList",
+  "props": {
+    "windows": 2,
+    "style": {
+      "backgroundColor": "#ffffc6",
+      "padding": 10,
+      "flex": 1
+    },
+    "sections": [{
+      "props.children.props.children": "Fading Exits",
+      "data": [{
+        "props.children.props.children": "fadeOut",
+        "props.animation": "fadeOut",
+        "props.style.backgroundColor": "#a367bf"
+      },
+        {
+          "props.children.props.children": "fadeOutDown",
+          "props.animation": "fadeOutDown",
+          "props.style.backgroundColor": "#eddeff"
+        },
+        {
+          "props.children.props.children": "fadeOutDownBig",
+          "props.animation": "fadeOutDownBig",
+          "props.style.backgroundColor": "#a367bf"
+        },
+        {
+          "props.children.props.children": "fadeOutUp",
+          "props.animation": "fadeOutUp",
+          "props.style.backgroundColor": "#eddeff"
+        },
+        {
+          "props.children.props.children": "fadeOutUpBig",
+          "props.animation": "fadeOutUpBig",
+          "props.style.backgroundColor": "#a367bf"
+        },
+        {
+          "props.children.props.children": "fadeOutLeft",
+          "props.animation": "fadeOutLeft",
+          "props.style.backgroundColor": "#eddeff"
+        },
+        {
+          "props.children.props.children": "fadeOutLeftBig",
+          "props.animation": "fadeOutLeftBig",
+          "props.style.backgroundColor": "#a367bf"
+        },
+        {
+          "props.children.props.children": "fadeOutRight",
+          "props.animation": "fadeOutRight",
+          "props.style.backgroundColor": "#eddeff"
+        },
+        {
+          "props.children.props.children": "fadeOutRightBig",
+          "props.animation": "fadeOutRightBig",
+          "props.style.backgroundColor": "#a367bf"
+        }
+      ]
+    }],
+    "renderSectionHeader": {
+      "type": "RNDM.renderItem",
+      "isFunc": true,
+      "args": [{
+        "type": "react-native.View",
+        "props": {
+          "style": {
+            "margin": 5,
+            "padding": 5,
+            "height": 20,
+            "justifyContent": "center",
+            "backgroundColor": "#399694"
+          },
+          "children": {
+            "type": "react-native.Text",
+            "props": {
+              "style": {
+                "color": "#ffffff"
+              }
+            }
+          }
+        }
+      },
+        "section"
+      ],
+      "execute": [
+        true
+      ]
+    },
+    "renderItem": {
+      "type": "RNDM.renderItem",
+      "isFunc": true,
+      "args": [{
+        "type": "animatable.View",
+        "props": {
+          "iterationCount": "infinite",
+          "iterationDelay": 1000,
+          "style": {
+            "margin": 5,
+            "padding": 5,
+            "minHeight": 50,
+            "justifyContent": "center",
+            "backgroundColor": "#eddeff"
+          },
+          "children": {
+            "type": "react-native.Text"
+          }
+        }
+      }],
+      "execute": [
+        true
+      ]
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "type": "react-native.SectionList",
+  "props": {
+    "windows": 2,
+    "style": {
+      "backgroundColor": "#ffffc6",
+      "padding": 10,
+      "flex": 1
+    },
+    "sections": [
+      {
+        "props.children.props.children": "Lightspeed",
+        "data": [
+          {
+            "props.children.props.children": "lightSpeedIn",
+            "props.animation": "lightSpeedIn",
+            "props.style.backgroundColor": "#a367bf"
+          },
+          {
+            "props.children.props.children": "lightSpeedOut",
+            "props.animation": "lightSpeedOut",
+            "props.style.backgroundColor": "#eddeff"
+          }
+        ]
+      }
+    ],
+    "renderSectionHeader": {
+      "type": "RNDM.renderItem",
+      "isFunc": true,
+      "args": [
+        {
+          "type": "react-native.View",
+          "props": {
+            "style": {
+              "margin": 5,
+              "padding": 5,
+              "height": 20,
+              "justifyContent": "center",
+              "backgroundColor": "#399694"
+            },
+            "children": {
+              "type": "react-native.Text",
+              "props": {
+                "style": {
+                  "color": "#ffffff"
+                }
+              }
+            }
+          }
+        },
+        "section"
+      ],
+      "execute": [
+        true
+      ]
+    },
+    "renderItem": {
+      "type": "RNDM.renderItem",
+      "isFunc": true,
+      "args": [
+        {
+          "type": "animatable.View",
+          "props": {
+            "iterationCount": "infinite",
+            "iterationDelay": 1000,
+            "style": {
+              "margin": 5,
+              "padding": 5,
+              "minHeight": 50,
+              "justifyContent": "center",
+              "backgroundColor": "#eddeff"
+            },
+            "children": {
+              "type": "react-native.Text"
+            }
+          }
+        }
+      ],
+      "execute": [
+        true
+      ]
+    }
+  }
+}

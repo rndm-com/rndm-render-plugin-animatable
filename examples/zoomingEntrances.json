@@ -1,0 +1,93 @@
+{
+  "type": "react-native.SectionList",
+  "props": {
+    "windows": 2,
+    "style": {
+      "backgroundColor": "#ffffc6",
+      "padding": 10,
+      "flex": 1
+    },
+    "sections": [{
+      "props.children.props.children": "Zooming Entrances",
+      "data": [{
+        "props.children.props.children": "zoomIn",
+        "props.animation": "zoomIn",
+        "props.style.backgroundColor": "#a367bf"
+      },
+        {
+          "props.children.props.children": "zoomInDown",
+          "props.animation": "zoomInDown",
+          "props.style.backgroundColor": "#eddeff"
+        },
+        {
+          "props.children.props.children": "zoomInUp",
+          "props.animation": "zoomInUp",
+          "props.style.backgroundColor": "#a367bf"
+        },
+        {
+          "props.children.props.children": "zoomInLeft",
+          "props.animation": "zoomInLeft",
+          "props.style.backgroundColor": "#eddeff"
+        },
+        {
+          "props.children.props.children": "zoomInRight",
+          "props.animation": "zoomInRight",
+          "props.style.backgroundColor": "#a367bf"
+        }
+      ]
+    }],
+    "renderSectionHeader": {
+      "type": "RNDM.renderItem",
+      "isFunc": true,
+      "args": [{
+        "type": "react-native.View",
+        "props": {
+          "style": {
+            "margin": 5,
+            "padding": 5,
+            "height": 20,
+            "justifyContent": "center",
+            "backgroundColor": "#399694"
+          },
+          "children": {
+            "type": "react-native.Text",
+            "props": {
+              "style": {
+                "color": "#ffffff"
+              }
+            }
+          }
+        }
+      },
+        "section"
+      ],
+      "execute": [
+        true
+      ]
+    },
+    "renderItem": {
+      "type": "RNDM.renderItem",
+      "isFunc": true,
+      "args": [{
+        "type": "animatable.View",
+        "props": {
+          "iterationCount": "infinite",
+          "iterationDelay": 1000,
+          "style": {
+            "margin": 5,
+            "padding": 5,
+            "minHeight": 50,
+            "justifyContent": "center",
+            "backgroundColor": "#eddeff"
+          },
+          "children": {
+            "type": "react-native.Text"
+          }
+        }
+      }],
+      "execute": [
+        true
+      ]
+    }
+  }
+}
