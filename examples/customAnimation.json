@@ -4,7 +4,7 @@
     "animation": "myanim",
     "iterationCount": "infinite",
     "middleware": [{
-      "middleware": "animatable.initializeRegistryWithDefinitions",
+      "middleware": "animatable.initializeRegistry",
       "args": [{
         "myanim": {
           "0": {
