@@ -1,12 +1,12 @@
-# RNDM Render Plugin: Animatable
+# [RNDM](https://www.rndm.com) Render Plugin: Animatable
 
 ## About
 
-This plugin provides access to animatable components for the [RNDM Render package](https://github.com/rndm-com/rndm-render).
+This plugin provides access to animatable components for the [RNDM Render package](https://www.rndm.com/docs/rndm-render).
 
 ## Installation
 
-If you have not already done so, then please ensure you have installed the [RNDM Render](https://github.com/rndm-com/rndm-render) and [RNDM Plugin: Core](https://github.com/rndm-com/rndm-render-plugin-core) package.
+If you have not already done so, then please ensure you have installed the [RNDM Render](https://www.rndm.com/docs/rndm-render) and [RNDM Preset: Core](https://www.rndm.com/docs/rndm-render/preset/core) package.
 
 ### From NPM
 
@@ -125,3 +125,5 @@ Although there is a host of predefined animations available, you are still able 
 }
 
 ```
+
+Check out the [Playground](https://www.rndm.com/playground) page to see how these features work.
